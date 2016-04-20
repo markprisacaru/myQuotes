@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="jumbotron">
+    <h1 align=center><strong>Author:</strong>
+  <%= @quote.author %></h1>
+    <p align= center>A collection of Quotes</p> 
+  </div>
+
+<p>
+  <strong>Quote:</strong>
+  <%= @quote.quote %>
+</p>
+
+<p>
+  <strong>Background:</strong>
+  <%= @quote.background %>
+</p>
+<button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_quote_path(@quote) %> </button>
+<button type="button" class="btn btn-default"><%= link_to 'Back', quotes_path %></button>
