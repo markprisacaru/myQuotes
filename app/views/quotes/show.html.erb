@@ -3,17 +3,19 @@
   <div class="jumbotron">
     <h1 align=center><strong>Author:</strong>
   <%= @quote.author %></h1>
-    <p align= center>A collection of Quotes</p> 
   </div>
+<div class="panel panel-group">
+  <div class="panel panel-default">
 
-<p>
+<p class="panel-body">
   <strong>Quote:</strong>
   <%= @quote.quote %>
 </p>
 
-<p>
+<p class="panel-footer">
   <strong>Background:</strong>
   <%= @quote.background %>
 </p>
+  </div>
 <button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_quote_path(@quote) %> </button>
 <button type="button" class="btn btn-default"><%= link_to 'Back', quotes_path %></button>
